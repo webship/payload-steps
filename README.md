@@ -227,6 +227,15 @@ upload in `tests/assets/`: copy that folder too). Together they use every step o
 the pack. Each makes its own test documents and deletes them after it. They run
 as they are on the app of either way of step 1.
 
+The `playwright.config.ts` that `npx init-webship-js` writes pauses 300 ms
+before every browser action, so a run can be followed by eye. The steps wait on
+the page, not on the clock: for the whole suite (47 scenarios), the starter's
+own `test:fast` script runs at full speed.
+
+```bash
+LAUNCH_URL=https://payloadsteps.ddev.site npm run test:fast
+```
+
 ### What the suite tests
 
 The features of this repository run every step of the pack against the test

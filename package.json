@@ -1,0 +1,67 @@
+{
+  "name": "@webship-js/payload-steps",
+  "version": "2.0.0",
+  "description": "Cucumber step definitions for the admin and the website of a Payload app, a plugin for webship-js (Playwright and Cucumber): the admin login and logout, the first-user screen and an account the admin refuses; a collection's list with its search, filters, columns, sorting, pages and bulk edit, publish, unpublish and delete; the edit view with every kind of field, tabs, blocks and arrays, the slug; drafts, autosave, versions, comparing and restoring; the live preview; uploads; the account page; what an account may not open; and the website template's front end: posts, the search, a form of the form builder and the 404 page.",
+  "main": "tests/step-definitions/payload-session.steps.js",
+  "files": [
+    "tests/step-definitions/",
+    "tests/features/",
+    "tests/assets/",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "cucumber-js --config cucumber.js",
+    "test:dry": "cucumber-js --config cucumber.js --dry-run",
+    "test:examples": "node tests/check-examples.js",
+    "test:paths": "node tests/check-paths.js",
+    "test:must-fail": "node tests/check-must-fail.js",
+    "test:chromium": "BROWSER=chromium cucumber-js --config cucumber.js",
+    "test:firefox": "BROWSER=firefox cucumber-js --config cucumber.js",
+    "test:webkit": "BROWSER=webkit cucumber-js --config cucumber.js",
+    "test:headed": "HEADLESS=false cucumber-js --config cucumber.js",
+    "generate-reports": "generate-reports",
+    "test:fast": "SLOW_MO=0 cucumber-js --config cucumber.js"
+  },
+  "keywords": [
+    "webship-js",
+    "payload",
+    "payloadcms",
+    "headless-cms",
+    "nextjs",
+    "admin",
+    "cucumber",
+    "cucumber-js",
+    "playwright",
+    "bdd",
+    "testing",
+    "e2e",
+    "gherkin"
+  ],
+  "author": "Webship.co",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/webship/payload-steps.git"
+  },
+  "bugs": {
+    "url": "https://github.com/webship/payload-steps/issues"
+  },
+  "homepage": "https://github.com/webship/payload-steps#readme",
+  "publishConfig": {
+    "access": "public"
+  },
+  "engines": {
+    "node": ">= 20.0"
+  },
+  "peerDependencies": {
+    "webship-js": "^2.0.16"
+  },
+  "devDependencies": {
+    "tsx": "^4.23.0",
+    "webship-js": "^2.0.16"
+  },
+  "overrides": {
+    "@cucumber/cucumber": "^12"
+  }
+}

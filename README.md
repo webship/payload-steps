@@ -57,7 +57,7 @@ twice on every push and pull request, then the assertions that must fail; see
 
 ## From nothing to a green run
 
-What the machine needs: Docker, [DDEV](https://ddev.com), git, and Node.js 20 or
+What the machine needs: Docker, [DDEV](https://ddev.com), git, and Node.js 24 or
 later with npm. Node.js 24, the app and PostgreSQL run in DDEV's containers.
 
 **1. The app.** The pack's own build script (the one CI runs) makes the app in a
@@ -276,7 +276,7 @@ same collapsible part of the admin).
 
 ## Requirements
 
-- Node.js 20 or later
+- Node.js 24 or later
 - A webship-js 2.0 test project (webship-js 2.0.16 or later)
 - A Payload 3 app (3.94 or later) with accounts for the suite (an administrator
   among them, for the test-document steps); the website template for the steps

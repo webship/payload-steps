@@ -1,6 +1,6 @@
 {
   "name": "@webship-js/payload-steps",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Cucumber step definitions for the admin and the website of a Payload app, a plugin for webship-js (Playwright and Cucumber): the admin login and logout, the first-user screen and an account the admin refuses; a collection's list with its search, filters, columns, sorting, pages and bulk edit, publish, unpublish and delete; the edit view with every kind of field, tabs, blocks and arrays, the slug; drafts, autosave, versions, comparing and restoring; the live preview; uploads; the account page; what an account may not open; and the website template's front end: posts, the search, a form of the form builder and the 404 page.",
   "main": "tests/step-definitions/payload-session.steps.js",
   "files": [
